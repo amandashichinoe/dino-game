@@ -48,12 +48,13 @@ function createCactus(){
     background.appendChild(cactus);
     let leftInterval = setInterval(() =>{
         if(cactusPosition < -60){
-            clearInterval(leftInterval);
+            clearInterval(leftInterval);    
             background.removeChild(cactus);
         } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60){
             //Game Over
             clearInterval(leftInterval);
             document.body.innerHTML = '<h1 class="game-over">Fim de Jogo</h1>';
+            document.body.innerHTML += '<div class="restart"><img src="img/refresh.png" onclick="location.reload(true)"></div>';
 
         } else {
             cactusPosition -= 10; //velocidade em que ele se movimenta para a esquerda

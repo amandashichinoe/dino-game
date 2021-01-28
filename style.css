@@ -21,8 +21,16 @@ body{
 .game-over{
     text-align: center;
     color: #666666;
-    margin-top: 50px;
+    margin-top: 50vh;
     font-family: arial;
+}
+
+.restart{
+    text-align: center;
+}
+.restart img{
+    width: 50px;
+    height: 50px;
 }
 
 @keyframes slideright{
